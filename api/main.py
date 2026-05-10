@@ -8,6 +8,10 @@ from modules.airports.routes import (
     router as airports_router
 )
 
+from modules.flights.routes import (
+    router as flights_router
+)
+
 app = FastAPI(
     title="BookingHub API",
     version="1.0.0",
@@ -34,6 +38,10 @@ register_exception_handlers(app)
 
 app.include_router(
     airports_router
+)
+
+app.include_router(
+    flights_router
 )
 
 # HEALTH CHECK
