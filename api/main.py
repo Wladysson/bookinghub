@@ -16,6 +16,10 @@ from modules.hotels.routes import (
     router as hotels_router
 )
 
+from modules.reservations.routes import (
+    router as reservations_router
+)
+
 app = FastAPI(
     title="BookingHub API",
     version="1.0.0",
@@ -50,6 +54,10 @@ app.include_router(
 
 app.include_router(
     hotels_router
+)
+
+app.include_router(
+    reservations_router
 )
 
 # HEALTH CHECK
