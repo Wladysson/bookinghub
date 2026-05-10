@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Brazil",
+    "continent": "South America",
+    "currency": "BRL",
+    "language": "Portuguese"
+  },
+  {
+    "name": "United States",
+    "continent": "North America",
+    "currency": "USD",
+    "language": "English"
+  },
+  {
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "currency": "GBP",
+    "language": "English"
+  },
+  {
+    "name": "France",
+    "continent": "Europe",
+    "currency": "EUR",
+    "language": "French"
+  },
+  {
+    "name": "Japan",
+    "continent": "Asia",
+    "currency": "JPY",
+    "language": "Japanese"
+  },
+  {
+    "name": "United Arab Emirates",
+    "continent": "Asia",
+    "currency": "AED",
+    "language": "Arabic"
+  },
+  {
+    "name": "Germany",
+    "continent": "Europe",
+    "currency": "EUR",
+    "language": "German"
+  },
+  {
+    "name": "Canada",
+    "continent": "North America",
+    "currency": "CAD",
+    "language": "English/French"
+  },
+  {
+    "name": "Australia",
+    "continent": "Oceania",
+    "currency": "AUD",
+    "language": "English"
+  },
+  {
+    "name": "Argentina",
+    "continent": "South America",
+    "currency": "ARS",
+    "language": "Spanish"
+  }
+]

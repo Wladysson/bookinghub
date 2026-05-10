@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Grand Palace Hotel",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "stars": 5
+  },
+  {
+    "name": "Ocean View Resort",
+    "city": "Fortaleza",
+    "country": "Brazil",
+    "stars": 4
+  },
+  {
+    "name": "Copacabana Luxury Stay",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "stars": 5
+  },
+  {
+    "name": "Brasília Business Hotel",
+    "city": "Brasília",
+    "country": "Brazil",
+    "stars": 4
+  },
+  {
+    "name": "Bahia Tropical Resort",
+    "city": "Salvador",
+    "country": "Brazil",
+    "stars": 5
+  },
+  {
+    "name": "Manhattan Executive Suites",
+    "city": "New York",
+    "country": "United States",
+    "stars": 5
+  },
+  {
+    "name": "Royal London Palace",
+    "city": "London",
+    "country": "United Kingdom",
+    "stars": 5
+  },
+  {
+    "name": "Paris Elegance Hotel",
+    "city": "Paris",
+    "country": "France",
+    "stars": 4
+  },
+  {
+    "name": "Tokyo Imperial Inn",
+    "city": "Tokyo",
+    "country": "Japan",
+    "stars": 5
+  },
+  {
+    "name": "Dubai Sky Resort",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "stars": 5
+  }
+]

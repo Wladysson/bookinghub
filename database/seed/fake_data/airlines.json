@@ -1,0 +1,52 @@
+[
+  {
+    "name": "LATAM Airlines",
+    "country": "Brazil",
+    "iata_code": "LA"
+  },
+  {
+    "name": "Gol Linhas Aéreas",
+    "country": "Brazil",
+    "iata_code": "G3"
+  },
+  {
+    "name": "Azul Brazilian Airlines",
+    "country": "Brazil",
+    "iata_code": "AD"
+  },
+  {
+    "name": "American Airlines",
+    "country": "United States",
+    "iata_code": "AA"
+  },
+  {
+    "name": "Delta Air Lines",
+    "country": "United States",
+    "iata_code": "DL"
+  },
+  {
+    "name": "Emirates",
+    "country": "United Arab Emirates",
+    "iata_code": "EK"
+  },
+  {
+    "name": "Air France",
+    "country": "France",
+    "iata_code": "AF"
+  },
+  {
+    "name": "British Airways",
+    "country": "United Kingdom",
+    "iata_code": "BA"
+  },
+  {
+    "name": "Japan Airlines",
+    "country": "Japan",
+    "iata_code": "JL"
+  },
+  {
+    "name": "Lufthansa",
+    "country": "Germany",
+    "iata_code": "LH"
+  }
+]

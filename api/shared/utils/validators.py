@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import re
 
 def validate_date_range(
     check_in: datetime,
@@ -18,3 +18,9 @@ def validate_positive_number(value):
         raise ValueError(
             "Valor deve ser positivo"
         )
+        
+def validate_email(email: str) -> bool:
+
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+
+    return re.match(pattern, email) is not None

@@ -1,0 +1,17 @@
+[
+  {
+    "query": "available_flights",
+    "execution_time_seconds": 0.004182,
+    "rows_returned": 124
+  },
+  {
+    "query": "customer_history",
+    "execution_time_seconds": 0.002771,
+    "rows_returned": 18
+  },
+  {
+    "query": "hotel_occupancy",
+    "execution_time_seconds": 0.007923,
+    "rows_returned": 42
+  }
+]
