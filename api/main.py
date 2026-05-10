@@ -1,0 +1,47 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from shared.middleware.logging_middleware import LoggingMiddleware
+from shared.middleware.error_handler import register_exception_handlers
+
+from modules.airports.routes import (
+    router as airports_router
+)
+
+app = FastAPI(
+    title="BookingHub API",
+    version="1.0.0",
+    description="Plataforma de reservas com alta concorrência"
+)
+
+# MIDDLEWARES
+
+app.add_middleware(LoggingMiddleware)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
+
+# EXCEPTION HANDLERS
+
+register_exception_handlers(app)
+
+# ROUTERS
+
+app.include_router(
+    airports_router
+)
+
+# HEALTH CHECK
+
+@app.get("/health")
+def health_check():
+
+    return {
+        "status": "ok",
+        "service": "bookinghub-api"
+    }
