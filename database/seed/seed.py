@@ -9,14 +9,16 @@ fake = Faker()
 
 
 connection = psycopg2.connect(
-    host="localhost",
+    host="db",
     port=5432,
     database="bookinghub",
-    user="postgres",
-    password="postgres"
+    user="booking",
+    password="secret"
 )
 
 cursor = connection.cursor()
+
+print("Conectado ao PostgreSQL com sucesso.")
 
 
 def seed_customers(total=1000):
@@ -38,7 +40,7 @@ def seed_customers(total=1000):
             (
                 fake.first_name(),
                 fake.last_name(),
-                fake.email(),
+                fake.unique.email(),
                 fake.phone_number(),
                 str(uuid.uuid4()),
                 fake.country()
