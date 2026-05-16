@@ -45,6 +45,14 @@ docker compose up --build
 
 ---
 
+### Deletar Ambiente
+
+```bash
+docker compose down -v
+```
+
+---
+
 ## Documentação da API
 
 Swagger disponível em:
