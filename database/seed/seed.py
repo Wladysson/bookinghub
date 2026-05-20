@@ -21,8 +21,8 @@ cursor = connection.cursor()
 print("Conectado ao PostgreSQL com sucesso.")
 
 
-def seed_customers(total=1000):
-
+def seed_customers(total=5000):
+    
     for _ in range(total):
 
         cursor.execute(
@@ -35,7 +35,7 @@ def seed_customers(total=1000):
                 document_number,
                 nationality
             )
-            VALUES (%s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s)ON CONFLICT (email) DO NOTHING;
             """,
             (
                 fake.first_name(),
@@ -71,7 +71,7 @@ def seed_airports():
                 city,
                 country
             )
-            VALUES (%s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s)ON CONFLICT (code) DO NOTHING;
             """,
             airport
         )
@@ -83,7 +83,7 @@ def seed_airports():
 
 if __name__ == "__main__":
 
-    seed_customers(1000)
+    seed_customers(5000)
 
     seed_airports()
 

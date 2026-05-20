@@ -44,6 +44,8 @@ from modules.auth.routes import (
     router as auth_router
 )
 
+from modules.audit.logger import log_event
+
 
 app = FastAPI(
     title="BookingHub API",
@@ -107,6 +109,14 @@ app.include_router(
 
 app.include_router(
     auth_router
+)
+
+log_event(
+    user_id=10,
+    action="CREATE_RESERVATION",
+    entity="flight",
+    entity_id=123,
+    metadata={"price": 500}
 )
 
 # HEALTH CHECK
