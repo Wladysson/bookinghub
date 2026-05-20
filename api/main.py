@@ -40,6 +40,11 @@ from modules.pricing.routes import (
     router as pricing_router
 )
 
+from modules.auth.routes import (
+    router as auth_router
+)
+
+
 app = FastAPI(
     title="BookingHub API",
     version="1.0.0",
@@ -98,6 +103,10 @@ app.include_router(
 
 app.include_router(
     pricing_router
+)
+
+app.include_router(
+    auth_router
 )
 
 # HEALTH CHECK
