@@ -32,6 +32,14 @@ from modules.reports.routes import (
     router as reports_router
 )
 
+from modules.recommendations.routes import (
+    router as recommendations_router
+)
+
+from modules.pricing.routes import (
+    router as pricing_router
+)
+
 app = FastAPI(
     title="BookingHub API",
     version="1.0.0",
@@ -82,6 +90,14 @@ app.include_router(
 
 app.include_router(
     reports_router
+)
+
+app.include_router(
+    recommendations_router
+)
+
+app.include_router(
+    pricing_router
 )
 
 # HEALTH CHECK
